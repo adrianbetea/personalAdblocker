@@ -1,0 +1,66 @@
+{
+  "manifest_version": 3,
+  "name": "Corporate Privacy Shield",
+  "version": "1.0.0",
+  "description": "Enterprise-grade static ad and tracker blocking using declarativeNetRequest only.",
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "*://*.doubleclick.net/*",
+    "*://*.googlesyndication.com/*",
+    "*://*.googleadservices.com/*",
+    "*://*.adservice.google.com/*",
+    "*://*.googletagmanager.com/*",
+    "*://*.google-analytics.com/*",
+    "*://*.app-measurement.com/*",
+    "*://*.facebook.net/*",
+    "*://*.connect.facebook.net/*",
+    "*://*.facebook.com/*",
+    "*://*.hotjar.com/*",
+    "*://*.hotjar.io/*",
+    "*://*.outbrain.com/*",
+    "*://*.taboola.com/*",
+    "*://*.adnxs.com/*",
+    "*://*.criteo.com/*",
+    "*://*.rubiconproject.com/*",
+    "*://*.pubmatic.com/*",
+    "*://*.openx.net/*",
+    "*://*.scorecardresearch.com/*",
+    "*://*.quantserve.com/*",
+    "*://*.adsrvr.org/*",
+    "*://*.rlcdn.com/*",
+    "*://*.demdex.net/*",
+    "*://*.everesttech.net/*",
+    "*://*.moatads.com/*",
+    "*://*.casalemedia.com/*",
+    "*://*.yieldmo.com/*",
+    "*://*.bat.bing.com/*",
+    "*://*.clarity.ms/*",
+    "*://*.segment.io/*",
+    "*://*.segment.com/*",
+    "*://*.mixpanel.com/*",
+    "*://*.amplitude.com/*",
+    "*://*.fullstory.com/*",
+    "*://*.newrelic.com/*",
+    "*://*.branch.io/*",
+    "*://*.adjust.com/*",
+    "*://*.appsflyer.com/*",
+    "*://*.smartadserver.com/*",
+    "*://*.adsafeprotected.com/*",
+    "*://*.teads.tv/*",
+    "*://*.youtube.com/*",
+    "*://*.youtubei.googleapis.com/*",
+    "*://*.googlevideo.com/*",
+    "*://*.ytimg.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "corporate-privacy-rules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
